@@ -1,5 +1,6 @@
 import "dart:io";
 
+import "find_by_name_contact.dart";
 import "view.dart";
 
 import "contact_create.dart";
@@ -40,9 +41,9 @@ class AppView extends View {
       // case 3:
       //   UpdateContactView().render(context);
       //   break;
-      // case 4:
-      //   FindByNameContactView().render(context);
-      //   break;
+      case 4:
+        FindByNameContactView().render(context);
+        break;
       // case 5:
       //   RemoveContactView().render(context);
       //   break;

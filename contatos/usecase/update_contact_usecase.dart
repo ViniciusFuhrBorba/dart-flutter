@@ -8,7 +8,7 @@ class ContactUpdateUseCase {
     String name = data['name'] ?? "";
     String email = data['email'] ?? "";
     String phone = data['phone'] ?? "";
-    int id = DateTime.now().microsecondsSinceEpoch;
+    int id = data['id'];
 
     ContactService service = context['contactService'];
     service.update(Contact(id, name, email, phone));

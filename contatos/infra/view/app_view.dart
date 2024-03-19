@@ -1,10 +1,11 @@
 import "dart:io";
 
-import "find_by_name_contact.dart";
-import "view.dart";
-
 import "contact_create.dart";
+import "find_by_name_contact.dart";
 import "contact_list.dart";
+import "contact_remove.dart";
+import "contact_update.dart";
+import "view.dart";
 
 class AppView extends View {
   @override
@@ -38,15 +39,15 @@ class AppView extends View {
       case 2:
         CreateContactView().render(context);
         break;
-      // case 3:
-      //   UpdateContactView().render(context);
-      //   break;
+      case 3:
+        UpdateContactView().render(context);
+        break;
       case 4:
         FindByNameContactView().render(context);
         break;
-      // case 5:
-      //   RemoveContactView().render(context);
-      //   break;
+      case 5:
+        RemoveContactView().render(context);
+        break;
       case 6:
         print("Sessão encerrada");
         break;
